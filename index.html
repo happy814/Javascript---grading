@@ -16,23 +16,23 @@
         let grade = '';
 
 
-        if (score >= 80 && sce <= 100) {
+        if (score >= 80 && score <= 100) {
 
-            grade = 'aa';
-        }
-        else if (score >= 70) {
-            grade = 'a';
+            grade = 'aa';}
+        
+        else if (score >60 && score <80){
+            grade = 'a';}
 
-        }
-        else if (score >= 60) {
-            grade = "b";
-        }
-        else if (score >= 30) {
-            grade = 'c';
-        }
-        else {
-            grade = 'd';
-        }
+        
+        else if (score >=40 && score<=60 ){
+            grade = "b";}
+        
+        else if (score >= 20 && score <= 40) {
+            grade = 'c';}
+        
+        else if (score<20) {grade="d";
+            }
+        else if (score >= 100) {grade = "F"}
 
         console.log(grade)
 
